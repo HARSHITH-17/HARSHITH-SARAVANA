@@ -93,7 +93,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
           <p className="text-gray-500 text-sm font-light">
-            © {new Date().getFullYear()} Harshith Saravanan. All rights reserved.
+            © {new Date().getFullYear()} HARSHITH SARAVANA. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-gray-500">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

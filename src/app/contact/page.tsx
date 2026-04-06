@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="grid lg:grid-cols-5 gap-12 items-start relative pb-10">
         {/* Background Highlight */}
         <div className="absolute top-1/2 left-0 w-full h-[150%] bg-[#00D4FF]/5 blur-[100px] rounded-full z-0 pointer-events-none -translate-y-1/2 mix-blend-screen" />
-        
+
         {/* Contact Info */}
         <div className="lg:col-span-2 space-y-6 relative z-10">
           <div className="glass-card p-6 flex items-center gap-6 group hover:border-[#00D4FF]/40 border border-[#00D4FF]/10 transition-all overflow-hidden relative">
@@ -77,7 +77,7 @@ export default function Contact() {
         {/* Contact Form */}
         <div className="lg:col-span-3 glass-card p-10 xl:p-14 border border-[#00D4FF]/20 relative z-10 overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#00D4FF]/10 blur-[80px] pointer-events-none" />
-          
+
           <h2 className="text-3xl font-bold text-white mb-10 tracking-tighter uppercase">Transmit Signal</h2>
           <form action="https://formspree.io/f/meepvraa" method="POST" className="space-y-8 relative z-10">
             <div className="grid md:grid-cols-2 gap-8">

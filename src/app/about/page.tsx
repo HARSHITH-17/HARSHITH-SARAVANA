@@ -133,14 +133,14 @@ export default function About() {
             {/* Photo */}
             <img
               src="/harshith-profile.jpg"
-              alt="Harshith Saravanan – Application Engineer"
+              alt="HARSHITH SARAVANA – Application Engineer"
               className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] rounded-full object-cover object-top opacity-90 transition-opacity group-hover:opacity-100"
             />
           </div>
 
           {/* Name card below photo */}
           <div className="glass-card p-6 w-full text-center lg:text-left z-10 border border-[#00D4FF]/10">
-            <div className="text-xl font-bold text-white mb-1 uppercase tracking-tight">Harshith Saravanan</div>
+            <div className="text-xl font-bold text-white mb-1 uppercase tracking-tight">HARSHITH SARAVANA</div>
             <div className="text-sm text-[#00D4FF] font-black uppercase mb-3 tracking-[0.1em]">Application Engineer</div>
             <div className="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-bold">Digital Engineering Transformation Specialist</div>
             <div className="mt-4 pt-4 border-t border-white/5 flex flex-col gap-3 text-xs text-gray-400 font-medium font-sans">
@@ -173,7 +173,7 @@ export default function About() {
           </h2>
           <div className="space-y-5 text-gray-400 font-light leading-relaxed font-sans">
             <p>
-              I&apos;m Harshith S., an Application Engineer and Digital Engineering Transformation Specialist based in Bengaluru, India, with over 4 years of experience delivering advanced engineering solutions.
+              I&apos;m HARSHITH SARAVANA, an Application Engineer and Digital Engineering Transformation Specialist based in Bengaluru, India, with over 4 years of experience delivering advanced engineering solutions.
             </p>
             <p>
               I operate at the intersection of engineering precision and business impact, enabling manufacturing organizations to enhance their capabilities through optimized design workflows, intelligent machining strategies, and seamless technology integration.
