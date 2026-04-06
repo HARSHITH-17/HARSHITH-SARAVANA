@@ -79,24 +79,24 @@ export default function Contact() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#00D4FF]/10 blur-[80px] pointer-events-none" />
           
           <h2 className="text-3xl font-bold text-white mb-10 tracking-tighter uppercase">Transmit Signal</h2>
-          <form className="space-y-8 relative z-10">
+          <form action="https://formspree.io/f/info.harshiths@gmail.com" method="POST" className="space-y-8 relative z-10">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-3">
                 <label className="text-[10px] text-[#00D4FF] uppercase tracking-[0.2em] font-black">Operator Name</label>
-                <input type="text" className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light" placeholder="Your full designation" />
+                <input name="name" type="text" required className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light" placeholder="Your full designation" />
               </div>
               <div className="space-y-3">
                 <label className="text-[10px] text-[#00D4FF] uppercase tracking-[0.2em] font-black">Response Frequency (Email)</label>
-                <input type="email" className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light" placeholder="contact@organization.com" />
+                <input name="email" type="email" required className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light" placeholder="contact@organization.com" />
               </div>
             </div>
             <div className="space-y-3">
               <label className="text-[10px] text-[#00D4FF] uppercase tracking-[0.2em] font-black">Entity / Organization</label>
-              <input type="text" className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light" placeholder="Corporate identifier" />
+              <input name="organization" type="text" className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light" placeholder="Corporate identifier" />
             </div>
             <div className="space-y-3">
               <label className="text-[10px] text-[#00D4FF] uppercase tracking-[0.2em] font-black">Required Capability</label>
-              <select className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all appearance-none cursor-pointer font-light">
+              <select name="service" className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all appearance-none cursor-pointer font-light">
                 <option value="" className="bg-[#050816] text-gray-400">Select protocol...</option>
                 <option value="cad" className="bg-[#050816]">CAD Design &amp; Product Development</option>
                 <option value="cam" className="bg-[#050816]">CAM Programming &amp; CNC Support</option>
@@ -109,9 +109,9 @@ export default function Contact() {
             </div>
             <div className="space-y-3">
               <label className="text-[10px] text-[#00D4FF] uppercase tracking-[0.2em] font-black">Data Payload (Message)</label>
-              <textarea rows={6} className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light resize-none" placeholder="Detail your project requirements, technical challenges, and operational objectives..." />
+              <textarea name="message" rows={6} required className="w-full bg-[#050816]/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#00D4FF]/80 focus:ring-1 focus:ring-[#00D4FF]/50 transition-all placeholder:text-gray-600 font-light resize-none" placeholder="Detail your project requirements, technical challenges, and operational objectives..." />
             </div>
-            <button type="button" className="w-full relative py-5 rounded-xl bg-[#00D4FF] text-[#050816] font-bold uppercase tracking-[0.1em] text-sm overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(0,212,255,0.4)] active:scale-[0.98] group">
+            <button type="submit" className="w-full relative py-5 rounded-xl bg-[#00D4FF] text-[#050816] font-bold uppercase tracking-[0.1em] text-sm overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(0,212,255,0.4)] active:scale-[0.98] group">
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <Send size={18} />
                 Execute Transmission
