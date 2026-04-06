@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #e0faff;
+  --color-brand-100: #b3f2ff;
+  --color-brand-200: #80e8ff;
+  --color-brand-300: #4ddbff;
+  --color-brand-400: #1ab0ff;
+  --color-brand-500: #00d4ff;
+  --color-brand-600: #00a8cc;
+  --color-brand-700: #007c99;
+  --color-brand-800: #005166;
+  --color-brand-900: #002633;
+  --color-brand-950: #000c14;
+  
+  --color-background: #050816;
+  --color-foreground: #fafafa;
+  --color-card: rgba(10, 15, 30, 0.6);
+  --color-border: rgba(0, 212, 255, 0.1);
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(0, 212, 255, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(37, 99, 235, 0.03) 0%, transparent 40%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+.glass {
+  background: rgba(5, 8, 22, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(10, 15, 30, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  border-radius: 1.5rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), transparent, rgba(37, 99, 235, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 212, 255, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(0, 212, 255, 0.15),
+    inset 0 0 0 1px rgba(0, 212, 255, 0.05);
+}
+
+.glass-card:hover::after {
+  opacity: 1;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 30%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-mesh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(190, 100%, 15%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(210, 100%, 10%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(195, 100%, 15%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(200, 100%, 10%, 0.1) 0px, transparent 50%);
+}
+
+.neon-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent, 
+    transparent, 
+    transparent, 
+    #00d4ff
+  );
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #101525;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff;
+}
