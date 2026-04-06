@@ -79,7 +79,7 @@ export default function Contact() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#00D4FF]/10 blur-[80px] pointer-events-none" />
           
           <h2 className="text-3xl font-bold text-white mb-10 tracking-tighter uppercase">Transmit Signal</h2>
-          <form action="https://formspree.io/f/info.harshiths@gmail.com" method="POST" className="space-y-8 relative z-10">
+          <form action="https://formspree.io/f/meepvraa" method="POST" className="space-y-8 relative z-10">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-3">
                 <label className="text-[10px] text-[#00D4FF] uppercase tracking-[0.2em] font-black">Operator Name</label>
